@@ -9,7 +9,7 @@ const jwt = require("jsonwebtoken");
  */
 async function registerUserController(req,res){
 
-    const { name , email , password } = req.body;
+    const { username , email , password } = req.body;
     if(!email || !username || !password){
     return res.status(400).json({
         message:"please enter username , password and email"
@@ -28,7 +28,7 @@ if(isUserAlreadyExists){
 
 const hash = await bcrypt.hash(password,10);
 
-const user = await uesrModel.create({
+const user = await userModel.create({
     username,
     email,
     password:hash
