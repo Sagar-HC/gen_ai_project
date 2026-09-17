@@ -1,5 +1,6 @@
 let mongoose = require("mongoose");
 
+
 const blackListTokenSchema = new mongoose.Schema({
     token:{
         type:"String",
