@@ -15,7 +15,7 @@ const Register = () =>{
                    </div>
 
                    <div className="input-grp">
-                    <label htmlFor="emailr">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Enter your email" />
                    </div>
 
@@ -30,7 +30,6 @@ const Register = () =>{
                 
             </div>
         </main>
-    
     );
 
 }

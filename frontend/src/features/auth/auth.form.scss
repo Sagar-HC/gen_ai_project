@@ -11,6 +11,9 @@ main{
 
     .form-container{
         min-width: 350px;
+        p{
+            padding-top: 0.5rem;
+        }
     }
     form{
         display: flex;
@@ -31,6 +34,12 @@ main{
             padding-block: 0.75rem;
             border-radius: 0.75rem;
         }
+    }
+
+    a{
+        
+        color:#e1034d;
+        text-decoration: none;
     }
 
 
