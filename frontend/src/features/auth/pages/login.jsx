@@ -16,12 +16,12 @@ export default function Login(){
         navigate("/");
     }
     if(loading){
-            return(<main><h1>faaaaaaaaaaaahh</h1></main>)
+            return(<main><h1>loading........</h1></main>)
     }
     return(
         <main>
             <div className="form-container">
-                <h1>Login</h1>
+                <h1>Login</h1>  
                 <form onSubmit={handleSubmit}>
                     
                    <div className="input-grp">

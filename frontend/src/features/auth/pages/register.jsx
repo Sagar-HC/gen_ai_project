@@ -17,9 +17,9 @@ const Register = () =>{
     }
 
     if(loading){
-            return(<main><h1>faaaaaaaaaaaahh</h1></main>)}
+            return(<main><h1>loading....</h1></main>)}
 
-            
+             
     return(
         <main>
             <div className="form-container">

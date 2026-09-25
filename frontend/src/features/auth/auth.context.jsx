@@ -6,7 +6,10 @@ export const AuthContext = createContext();
 // here the children would be the app itself which provides us with all data needed
 export const AuthProvider = ({ children })=>{
     const [user,setUser] = useState(null)
-    const [loading,setLoading] = useState(false);
+    const [loading,setLoading] = useState(true);
+
+   
+    
 
     return(
         <AuthContext.Provider value={{user,setUser,loading,setLoading}}>
