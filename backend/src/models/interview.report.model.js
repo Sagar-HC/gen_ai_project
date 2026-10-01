@@ -94,7 +94,8 @@ const interviewReportSchema = new mongoose.Schema({
     technicalQuestions:[technicalQuestionsSchema],
     behavioralQuestions:[behavioralQuestionsSchema],
     skillGaps:[skillGapSchema],
-    preparation:[preparationPlanSchema]
+    preparation:[preparationPlanSchema],
+    
 },{
     timestamps:true
 })
