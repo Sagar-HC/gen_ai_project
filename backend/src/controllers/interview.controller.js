@@ -1,5 +1,5 @@
 const pdfParse = require("pdf-parse")
-const generateInterviewReportController = require("../services/ai.services")
+const generateInterviewReport = require("../services/ai.services")
 
 
 
@@ -18,4 +18,4 @@ async function generateInterviewReportController (req,res){
 
 
 
-module.exports = {}
+module.exports = { generateInterviewReportController}

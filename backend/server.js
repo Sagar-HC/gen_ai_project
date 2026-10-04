@@ -2,10 +2,12 @@ require("dotenv").config();
 const dns = require('node:dns');
 const app = require("./src/app");
 const connectToDb = require("./src/config/database");
+const generateInterviewReport =  require("./src/services/ai.services")
+const {resume , selfDescription, jobDescription} = require("./src/services/temp")
 
 connectToDb();
 
-
+generateInterviewReport({resume,selfDescription,jobDescription})
 
 
 

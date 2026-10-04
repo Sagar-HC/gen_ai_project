@@ -2,6 +2,7 @@ const { GoogleGenAI, Behavior } = require("@google/genai");
 const { z } = require("zod");
 const {zodToJsonSchema } = require("zod-to-json-schema")
 
+
 const ai = new GoogleGenAI({
     apiKey :process.env.GOOGLE_GENAI_API_KEY
 });
@@ -51,8 +52,10 @@ async function generateInterviewReport({resume,selfDescription,jobDescription}) 
         }
     })
     
-    return JSON.parse(response.text)
+      console.log(response.text)
 }
+
+
 
 
 module.exports = generateInterviewReport
